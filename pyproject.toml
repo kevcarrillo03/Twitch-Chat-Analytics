@@ -1,0 +1,21 @@
+[project]
+name = "twitch-chat-analytics"
+version = "0.1.0"
+authors = [
+    { name = "kevcarrillo03", email = "155713837+kevcarrillo03@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+    "ruff>=0.16.10",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
